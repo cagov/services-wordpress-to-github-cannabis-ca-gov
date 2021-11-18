@@ -10,7 +10,7 @@
         "name": "staging.cannabis.ca.gov",
         "description": "",
         "enabled": true,
-        "enabledLocal": true,
+        "enabledLocal": false,
         "WordPressSource": {
           "url": "https://cannabis.ca.gov",
           "tags_exclude": []

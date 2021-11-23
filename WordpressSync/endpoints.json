@@ -24,40 +24,6 @@
         }
       },
       {
-        "name": "staging.cannabis.ca.gov",
-        "description": "",
-        "enabled": true,
-        "enabledLocal": false,
-        "ReportingChannel_Slack": "C02G6PETB9B",
-        "WordPressSource": {
-          "url": "https://cannabis.ca.gov",
-          "tags_exclude": []
-        },
-        "GitHubTarget": {
-          "Owner": "cagov",
-          "Repo": "cannabis.ca.gov",
-          "Branch": "staging",
-          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
-        }
-      },
-      {
-        "name": "development.cannabis.ca.gov",
-        "description": "",
-        "enabled": true,
-        "enabledLocal": false,
-        "ReportingChannel_Slack": "C02G6PETB9B",
-        "WordPressSource": {
-          "url": "https://cannabis.ca.gov",
-          "tags_exclude": []
-        },
-        "GitHubTarget": {
-          "Owner": "cagov",
-          "Repo": "cannabis.ca.gov",
-          "Branch": "development",
-          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
-        }
-      },
-      {
         "name": "staging-pantheon.cannabis.ca.gov",
         "description": "",
         "enabled": true,

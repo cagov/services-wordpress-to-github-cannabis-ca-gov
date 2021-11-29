@@ -12,7 +12,7 @@
         "enabled": true,
         "enabledLocal": false,
         "WordPressSource": {
-          "url": "https://cannabis.ca.gov",
+          "url": "https://test-cagov-dcc.pantheonsite.io",
           "tags_exclude": []
         },
         "GitHubTarget": {

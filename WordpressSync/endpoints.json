@@ -6,14 +6,14 @@
   },
   "data": {
     "projects": [
-{
+      {
         "name": "headless.cannabis.ca.gov",
         "description": "",
         "enabled": true,
-        "enabledLocal": false,
+        "enabledLocal": true,
         "ReportingChannel_Slack": "C02G6PETB9B",
         "WordPressSource": {
-          "url": "https://cannabis.ca.gov",
+          "url": "https://live-cagov-dcc.pantheonsite.io",
           "tags_exclude": []
         },
         "GitHubTarget": {

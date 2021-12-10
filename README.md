@@ -13,9 +13,7 @@ https://github.com/cagov/cannabis.ca.gov
 
 ## Referenced WordPress instances
 
-- https://cannabis.ca.gov/wp-admin/
-- https://live-cagov-dcc.pantheonsite.io/wp-admin/
-- https://dev-cagov-dcc.pantheonsite.io/wp-admin/
+- https://live-cannabis-ca-gov.pantheonsite.io/wp-admin/
 
 ## WordPress notification config target
 

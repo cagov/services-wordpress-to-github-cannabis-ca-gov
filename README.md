@@ -1,11 +1,10 @@
 # wordpress-to-github implementation for cannabis.ca.gov
 
-This is the [wordpress-to-github](https://www.npmjs.com/package/@cagov/wordpress-to-github) implementation for [cannabis.ca.gov](https://cannabis.ca.gov).
+This is the [wordpress-to-github](https://www.npmjs.com/package/@cagov/wordpress-to-github) implementation for [cannabis.ca.gov](https://cannabis.ca.gov) staging.
 
 ## Deploys services to the following Azure Function
 
-- `FA-GO-WORDPRESS-TO-GITHUB-CANNABIS-CA-GOV` - Function app
-- `sagowpghubcannabiscagov` - Storage account
+- `FA-GO-WORDPRESS-TO-GITHUB-CANNABIS-CA-GOV-DEV` - Function app
 
 ## Target site source
 
@@ -13,9 +12,7 @@ https://github.com/cagov/cannabis.ca.gov
 
 ## Referenced WordPress instances
 
-- https://cannabis.ca.gov/wp-admin/
-- https://live-cagov-dcc.pantheonsite.io/wp-admin/
-- https://dev-cagov-dcc.pantheonsite.io/wp-admin/
+- https://live-cannabis-ca-gov.pantheonsite.io/wp-admin/
 
 ## WordPress notification config target
 
@@ -23,7 +20,7 @@ You will need to create a Function Key in the Azure instance to use a trigger. S
 
 ### Trigger Target
 
-`https://fa-go-wordpress-to-github-cannabis-ca-gov.azurewebsites.net/WordpressSyncHttpTrigger?code=[Put Function Key Here]`
+`https://fa-go-wordpress-to-github-cannabis-ca-gov-dev.azurewebsites.net/WordpressSyncHttpTrigger?code=[Put Function Key Here]`
 
 ## Current Configuration
 

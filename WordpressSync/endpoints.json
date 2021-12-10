@@ -10,9 +10,9 @@
         "name": "staging.cannabis.ca.gov",
         "description": "",
         "enabled": true,
-        "enabledLocal": false,
+        "enabledLocal": true,
         "WordPressSource": {
-          "url": "https://test-cagov-dcc.pantheonsite.io",
+          "url": "https://live-cannabis-ca-gov.pantheonsite.io",
           "tags_exclude": []
         },
         "GitHubTarget": {

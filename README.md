@@ -1,6 +1,6 @@
 # wordpress-to-github implementation for cannabis.ca.gov
 
-This is the [wordpress-to-github](https://www.npmjs.com/package/@cagov/wordpress-to-github) implementation for [cannabis.ca.gov](https://cannabis.ca.gov) staging.
+This is the [wordpress-to-github](https://www.npmjs.com/package/@cagov/wordpress-to-github) implementation for [development.cannabis.ca.gov](https://development.cannabis.ca.gov).
 
 ## Deploys services to the following Azure Function
 

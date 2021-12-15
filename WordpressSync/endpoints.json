@@ -7,18 +7,18 @@
   "data": {
     "projects": [
       {
-        "name": "staging.cannabis.ca.gov",
+        "name": "development.cannabis.ca.gov",
         "description": "",
         "enabled": true,
         "enabledLocal": true,
         "WordPressSource": {
-          "url": "https://live-cannabis-ca-gov.pantheonsite.io",
+          "url": "https://dev-cannabis-ca-gov.pantheonsite.io",
           "tags_exclude": []
         },
         "GitHubTarget": {
           "Owner": "cagov",
           "Repo": "cannabis.ca.gov",
-          "Branch": "staging",
+          "Branch": "development",
           "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
         }
       }

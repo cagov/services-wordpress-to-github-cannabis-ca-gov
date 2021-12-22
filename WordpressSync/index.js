@@ -66,6 +66,8 @@ module.exports = async function (context, myTimer, activeEndpoints) {
  * @param {SourceEndpointConfigData[]} work
  */
 const doProcessEndpoints = async work => {
+  console.log("Workload", work);
+
   if (work.length) {
     console.log(`Using ${work.length} endpoint(s)`);
   } else {
@@ -76,7 +78,6 @@ const doProcessEndpoints = async work => {
 
   for (const endpoint of work) {
     console.log(`*** Checking endpoint for ${endpoint.name} ***`);
-
     const commitReports = await SyncEndpoint(
       endpoint.GitHubTarget,
       endpoint,
@@ -85,6 +86,7 @@ const doProcessEndpoints = async work => {
     );
 
     // if (endpoint.ReportingChannel_Slack) {
+    //   console.log("Slack channel": endpoint.ReportingChannel_Slack);
     //   //Endpoint reporting channel enabled.  Add a post for each commit report.
     //   if (commitReports?.length) {
     //     /** @type {string[]} */

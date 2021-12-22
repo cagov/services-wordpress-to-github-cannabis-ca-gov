@@ -44,7 +44,11 @@ module.exports = async function (context, myTimer, activeEndpoints) {
   );
 
   if (debugMode) {
+    try {
     await doProcessEndpoints(work);
+    } catch (error) {
+      console.error(error);
+    }
     return;
   }
 

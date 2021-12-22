@@ -1,6 +1,6 @@
 {
-  "name": "cagov-wordpress-to-github-development",
-  "version": "1.0.0",
+  "name": "services-wordpress-to-github-cannabis-ca-gov",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/cagov/wordpress-to-github.git"
@@ -17,6 +17,6 @@
     "prettier": "^2.4.1"
   },
   "dependencies": {
-    "@cagov/wordpress-to-github": "^0.1.0"
+    "@cagov/wordpress-to-github": "0.2.0"
   }
 }

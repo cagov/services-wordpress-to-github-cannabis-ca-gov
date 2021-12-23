@@ -1,0 +1,22 @@
+{
+  "$schema": "./wordpress-to-github.config.schema.json",
+  "meta": {
+    "title": "wordpress-to-github endpoints config file",
+    "description": "wordpress-to-github endpoints config file"
+  },
+  "data": {
+    "disabled": false,
+    "PostPath": "wordpress/posts",
+    "PagePath": "wordpress/pages",
+    "MediaPath": "wordpress/media",
+    "ApiRequests": [
+      {
+        "Destination": "wordpress/menus/header-menu.json",
+        "Source": "/wp-json/menus/v1/menus/header-menu",
+        "ExcludeProperties": ["description"]
+      }
+    ],
+    "GeneralFilePath": "wordpress/general/general.json",
+    "ExcludeProperties": ["content", "_links"]
+  }
+}

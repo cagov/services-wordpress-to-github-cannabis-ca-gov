@@ -1,0 +1,35 @@
+{
+  "name": "@cagov/wordpress-to-github",
+  "version": "0.3.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "commonjs",
+  "main": "index.js",
+  "typings": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cagov/wordpress-to-github.git"
+  },
+  "bugs": "https://github.com/cagov/wordpress-to-github/issues",
+  "description": "Used to create services that can sync WordPress to GitHub.",
+  "scripts": {
+    "beta to NPM": "npm publish --tag beta --access public",
+    "publish to NPM": "npm publish --access public"
+  },
+  "keywords": [
+    "wordpress",
+    "github"
+  ],
+  "author": {
+    "name": "Carter Medlin",
+    "email": "carter@digital.ca.gov",
+    "url": "https://github.com/carterm"
+  },
+  "dependencies": {
+    "fetch-retry": "^4.1.1",
+    "node-fetch": "^2.6.1",
+    "@cagov/github-tree-push": "^0.1.1"
+  }
+}

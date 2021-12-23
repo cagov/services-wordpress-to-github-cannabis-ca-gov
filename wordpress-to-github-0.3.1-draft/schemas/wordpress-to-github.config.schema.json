@@ -1,0 +1,121 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Schema for a single wordpress-to-github endpoint",
+  "description": "Use this schema when building a wordpress-to-github.config for your Github branch.",
+  "$comment": "Version 2.1",
+  "$id": "wordpress-to-github_config_v2_1",
+  "type": "object",
+  "required": ["data"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "If you see this, you have the schema correct."
+    },
+    "meta": {
+      "type": "object",
+      "description": "Help describe the purpose of this file for other developers.",
+      "examples": [
+        {
+          "title": "wordpress-to-github endpoints config file",
+          "description": "wordpress-to-github endpoints config file"
+        }
+      ]
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "examples": [
+        {
+          "disabled": false,
+          "PostPath": "wordpress/posts",
+          "PagePath": "wordpress/pages",
+          "MediaPath": "wordpress/media",
+          "ApiRequests": [
+            {
+              "Destination": "wordpress/menus/header-menu.json",
+              "Source": "/wp-json/menus/v1/menus/header-menu",
+              "ExcludeProperties": ["description"]
+            }
+          ],
+          "GeneralFilePath": "wordpress/general/general.json",
+          "ExcludeProperties": ["content", "_links"]
+        }
+      ],
+      "properties": {
+        "disabled": {
+          "type": "boolean",
+          "description": "set to true to disable processing",
+          "default": false
+        },
+        "PostPath": {
+          "type": "string",
+          "description": "Where should the posts go?",
+          "examples": ["wordpress/posts"]
+        },
+        "PagePath": {
+          "type": "string",
+          "description": "Where should the pages go?",
+          "examples": ["wordpress/pages"]
+        },
+        "MediaPath": {
+          "type": "string",
+          "description": "Where should image media go?",
+          "examples": ["wordpress/media"]
+        },
+        "ApiRequests": {
+          "type": "array",
+          "description": "What should be fetched from the API?",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["Source", "Destination"],
+            "properties": {
+              "Destination": {
+                "type": "string",
+                "description": "The path where the API request should be stored in git.",
+                "examples": ["wordpress/menus/header-menu.json"]
+              },
+              "Source": {
+                "type": "string",
+                "description": "The Wordpress API URL to fetch.",
+                "examples": ["/wp-json/menus/v1/menus/header-menu"]
+              },
+              "ExcludeProperties": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Which properties should we suppress in output?",
+                "examples": [["description"]]
+              }
+            }
+          },
+          "examples": [
+            {
+              "Destination": "wordpress/menus/header-menu.json",
+              "Source": "/wp-json/menus/v1/menus/header-menu",
+              "ExcludeProperties": ["description"]
+            }
+          ]
+        },
+        "GeneralFilePath": {
+          "type": "string",
+          "description": "The full path and filename for a 'general' file that contains information about the whole site.  Remove this attribute to stop updating the file.  Changing this file path will not remove the old file.",
+          "examples": ["wordpress/general/general.json"]
+        },
+        "ExcludeProperties": {
+          "type": "array",
+          "default": [],
+          "description": "Which properties should we suppress in output?",
+          "examples": [["content", "_links"]]
+        },
+        "HideAuthorName": {
+          "type": "boolean",
+          "description": "True to only display the numeric id for author.",
+          "default": false
+        }
+      }
+    }
+  }
+}

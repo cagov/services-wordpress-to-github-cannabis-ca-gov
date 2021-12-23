@@ -1,10 +1,10 @@
 // @ts-check
-const { SyncEndpoint } = require("@cagov/wordpress-to-github");
+const { SyncEndpoint } = require("../wordpress-to-github-0.3.1-draft");
 const {
   GitHubCommitter,
   GitHubCredentials,
   SourceEndpointConfigData
-} = require("@cagov/wordpress-to-github/common");
+} = require("../wordpress-to-github-0.3.1-draft/common");
 const {
   slackBotReportError,
   slackBotChatPost,
@@ -90,7 +90,7 @@ const doProcessEndpoints = async work => {
     );
 
     if (endpoint.ReportingChannel_Slack) {
-      console.log("Slack channel": endpoint.ReportingChannel_Slack);
+      console.log("Slack channel", endpoint.ReportingChannel_Slack);
       //Endpoint reporting channel enabled.  Add a post for each commit report.
       if (commitReports?.length) {
         /** @type {string[]} */

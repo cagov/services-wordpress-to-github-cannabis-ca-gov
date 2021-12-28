@@ -39,6 +39,23 @@
           "Branch": "staging",
           "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
         }
+      },
+      {
+        "name": "test.cannabis.ca.gov",
+        "description": "",
+        "enabled": true,
+        "enabledLocal": false,
+        "ReportingChannel_Slack": "C02G6PETB9B",
+        "WordPressSource": {
+          "url": "https://test-cannabis-ca-gov.pantheonsite.io",
+          "tags_exclude": []
+        },
+        "GitHubTarget": {
+          "Owner": "cagov",
+          "Repo": "cannabis.ca.gov",
+          "Branch": "test",
+          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
+        }
       }
     ]
   }

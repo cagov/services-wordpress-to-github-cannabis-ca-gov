@@ -19,7 +19,7 @@
           "Owner": "cagov",
           "Repo": "cannabis.ca.gov",
           "Branch": "development",
-          "ConfigPath": "wordpress/config/wordpress-to-github.config.json"
+          "ConfigPath": "odi-publishing/wordpress-to-github.config.json"
         }
       }
     ]

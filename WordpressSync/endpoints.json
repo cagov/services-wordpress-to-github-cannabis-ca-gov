@@ -10,7 +10,8 @@
         "name": "development.cannabis.ca.gov",
         "description": "",
         "enabled": true,
-        "enabledLocal": true,
+        "enabledLocal": false,
+        "ReportingChannel_Slack": "C02G6PETB9B",
         "WordPressSource": {
           "url": "https://dev-cannabis-ca-gov.pantheonsite.io",
           "tags_exclude": []

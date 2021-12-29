@@ -1,5 +1,5 @@
 // @ts-check
-const { GitHubTreePush, GithubCompare } = require("@cagov/github-tree-push");
+const { GitHubTreePush, GithubCompare } = require("./github-tree-push");
 const {
   ensureStringStartsWith,
   removeExcludedProperties,

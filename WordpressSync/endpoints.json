@@ -48,7 +48,7 @@
         "ReportingChannel_Slack": "C02G6PETB9B",
         "WordPressSource": {
           "url": "https://test-cannabis-ca-gov.pantheonsite.io",
-          "tags_exclude": ["review"]
+          "tags_exclude": ["staging"]
         },
         "GitHubTarget": {
           "Owner": "cagov",

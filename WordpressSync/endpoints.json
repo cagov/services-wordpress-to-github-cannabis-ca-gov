@@ -48,12 +48,29 @@
         "ReportingChannel_Slack": "C02G6PETB9B",
         "WordPressSource": {
           "url": "https://test-cannabis-ca-gov.pantheonsite.io",
-          "tags_exclude": []
+          "tags_exclude": ["review"]
         },
         "GitHubTarget": {
           "Owner": "cagov",
           "Repo": "cannabis.ca.gov",
           "Branch": "test",
+          "ConfigPath": "odi-publishing/wordpress-to-github.config.json"
+        }
+      },
+      {
+        "name": "test-staging.cannabis.ca.gov",
+        "description": "",
+        "enabled": true,
+        "enabledLocal": true,
+        "ReportingChannel_Slack": "C02G6PETB9B",
+        "WordPressSource": {
+          "url": "https://test-cannabis-ca-gov.pantheonsite.io",
+          "tags_exclude": []
+        },
+        "GitHubTarget": {
+          "Owner": "cagov",
+          "Repo": "cannabis.ca.gov",
+          "Branch": "test-staging",
           "ConfigPath": "odi-publishing/wordpress-to-github.config.json"
         }
       }

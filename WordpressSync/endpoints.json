@@ -11,7 +11,7 @@
         "description": "",
         "enabled": true,
         "enabledLocal": true,
-        "ReportingChannel_Slack": "C02G6PETB9B",
+        "ReportingChannel_Slack": "C03UEGZ1LS3",
         "WordPressSource": {
           "url": "https://api.cannabis.ca.gov",
           "tags_exclude": []
@@ -28,7 +28,7 @@
         "description": "",
         "enabled": true,
         "enabledLocal": false,
-        "ReportingChannel_Slack": "C02G6PETB9B",
+        "ReportingChannel_Slack": "C03UEGZ1LS3",
         "WordPressSource": {
           "url": "https://api.cannabis.ca.gov",
           "tags_exclude": []
@@ -45,7 +45,7 @@
         "description": "",
         "enabled": false,
         "enabledLocal": false,
-        "ReportingChannel_Slack": "C02G6PETB9B",
+        "ReportingChannel_Slack": "C03UEGZ1LS3",
         "WordPressSource": {
           "url": "https://test-cannabis-ca-gov.pantheonsite.io",
           "tags_exclude": ["staging"]
@@ -62,7 +62,7 @@
         "description": "",
         "enabled": false,
         "enabledLocal": false,
-        "ReportingChannel_Slack": "C02G6PETB9B",
+        "ReportingChannel_Slack": "C03UEGZ1LS3",
         "WordPressSource": {
           "url": "https://test-cannabis-ca-gov.pantheonsite.io",
           "tags_exclude": []

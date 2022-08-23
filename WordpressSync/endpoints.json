@@ -10,7 +10,7 @@
         "name": "headless.cannabis.ca.gov",
         "description": "",
         "enabled": true,
-        "enabledLocal": false,
+        "enabledLocal": true,
         "ReportingChannel_Slack": "C02G6PETB9B",
         "WordPressSource": {
           "url": "https://api.cannabis.ca.gov",
@@ -18,9 +18,9 @@
         },
         "GitHubTarget": {
           "Owner": "cagov",
-          "Repo": "cannabis.ca.gov",
+          "Repo": "static-content-cannabis",
           "Branch": "main",
-          "ConfigPath": "odi-publishing/wordpress-to-github.config.json"
+          "ConfigPath": "config/wordpress-to-github.config.json"
         }
       },
       {
@@ -35,16 +35,16 @@
         },
         "GitHubTarget": {
           "Owner": "cagov",
-          "Repo": "cannabis.ca.gov",
+          "Repo":  "static-content-cannabis",
           "Branch": "staging",
-          "ConfigPath": "odi-publishing/wordpress-to-github.config.json"
+          "ConfigPath": "config/wordpress-to-github.config.json"
         }
       },
       {
         "name": "test.cannabis.ca.gov",
         "description": "",
-        "enabled": true,
-        "enabledLocal": true,
+        "enabled": false,
+        "enabledLocal": false,
         "ReportingChannel_Slack": "C02G6PETB9B",
         "WordPressSource": {
           "url": "https://test-cannabis-ca-gov.pantheonsite.io",
@@ -60,8 +60,8 @@
       {
         "name": "test-staging.cannabis.ca.gov",
         "description": "",
-        "enabled": true,
-        "enabledLocal": true,
+        "enabled": false,
+        "enabledLocal": false,
         "ReportingChannel_Slack": "C02G6PETB9B",
         "WordPressSource": {
           "url": "https://test-cannabis-ca-gov.pantheonsite.io",
